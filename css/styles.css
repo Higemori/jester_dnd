@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+.holster {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Arial', cursive;
+  font-size: 3vmin;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+}
+
+h1 {
+  font-size: 10vmin;
+  margin: 0 auto 0 auto;
+  font-family: 'Eagle Lake', cursive;
+  line-height: 2;
+}
+
+h2 {
+  font-size: 5vmin;
+  margin-top: 0;
+  margin-bottom: 8vh;
+  font-family: 'Eagle Lake', cursive;
+}
+
+h3 {
+  font-size: 3vmin;
+  margin: 0 auto;
+  font-family: 'Eagle Lake', cursive;
+  margin: 0;
+}
+
+.first-container {
+  background-color: #FAF7F0;
+  background-image: url("../images/icewind-dale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.second-container div {
+  width: 65%;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-container {
+  color: white;
+  display: flex;
+  width: 100%;
+  background-image: url("../images/players.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.forth-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  color: white;
+  background-color: black;
+}
+
+.fifth-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.book {
+  width: 25vw;
+  height: auto;
+  margin: 2vh 2vw;
+}
+
+.book:hover {
+  transform: scale(1.25);
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.player {
+  text-align: left;
+  margin: 2vh 2vw;
+  padding: 0px;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.player:hover {
+  transform: scale(1.25);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.player table {
+  margin: 0;
+}
+
+.player table p {
+  margin: 0;
+}
+
+.player table td {
+  padding: 1.5vmin;
+}
+
+.portrait {
+  width: 20vmin;
+}
+
+.red {
+  color: #9e0b0f;
+}
+
+#seal {
+  width: 20vmin;
+  height: auto;
+}
