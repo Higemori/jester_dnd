@@ -69,6 +69,10 @@ h3 {
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  background-image: url("../images/synopsis.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .second-container div {
@@ -96,7 +100,7 @@ h3 {
   color: white;
   display: flex;
   width: 100%;
-  background-image: url("../images/players.jpg");
+  background-image: url("../images/char_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -189,7 +193,7 @@ h3 {
 
 .sixth-container {
   width: 100%;
-  background-image: url("../images/join-us.jpg");
+  background-image: url("../images/contact_us.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
