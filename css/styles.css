@@ -73,6 +73,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-height: 100%;
 }
 
 .second-container div {
@@ -131,6 +132,20 @@ h3 {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
+}
+
+#audio {
+  position: absolute;
+  left: 1.25rem;
+  top: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+#audio:hover {
+  opacity: 1;
 }
 
 .site-nav {
