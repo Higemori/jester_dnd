@@ -10,7 +10,6 @@
   scroll-behavior: smooth;
 }
 
-
 .countdown {
   color: #fff;
   display: inline-block;
@@ -74,7 +73,7 @@ h1 {
 h2 {
   font-size: 5vmin;
   margin-top: 0;
-  margin-bottom: 8vh;
+  margin-bottom: 7vh;
   font-family: 'Bona Nova', serif;
 }
 
@@ -137,12 +136,13 @@ h3 {
   color: white;
   display: flex;
   width: 100%;
+  padding-top: 10vh;
   background-image: url("../images/char_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   scroll-snap-align: start;
 }
@@ -257,7 +257,7 @@ h3 {
 }
 
 .book {
-  width: 25vw;
+  width: 23vw;
   height: auto;
   margin: 2vh 2vw;
   opacity: 0.75;
@@ -266,6 +266,7 @@ h3 {
 .book:hover {
   transform: scale(1.25);
   opacity: 1;
+  box-shadow: 0 0 0 3px #0be2f6;
 }
 
 .books {
@@ -277,7 +278,7 @@ h3 {
 }
 
 .discord {
-  width: 25vw;
+  width: 20vw;
   height: auto;
   margin: 2vh 2vw;
 }
@@ -332,4 +333,61 @@ h3 {
 #seal {
   width: 20vmin;
   height: auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: auto;
+  height: 100vmin;
+  padding-bottom: 35vmin;
+  position: relative;
+}
+
+@media screen and (min-width: 100vmin) {
+  .gallery {
+    padding-left: 90vmin;
+ }
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 10vmin;
+  opacity: 0;
+  width: 80vmin;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+.thumb{
+  border-radius: 25px;
+}
+
+.gallery__thumb {
+  padding-bottom: 20px;
+  margin-left: 25px;
+  grid-area: thumb;
+  display: block;
+  width: 10vmin;
+}
+
+.gallery__selector {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #0be2f6;
 }
