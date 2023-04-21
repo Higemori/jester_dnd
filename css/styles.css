@@ -21,19 +21,18 @@
 .countdown-number {
   padding: 10px;
   border-radius: 3px;
-  background: #dcf3ff;
+  background: rgba(0, 0, 0, .25);
   display: inline-block;
 }
 
 .countdown-time {
   padding: 15px;
   border-radius: 3px;
-  background: #a2d2df;
+  background: rgba(0, 0, 0, .5);
   display: inline-block;
 }
 
 .countdown-text {
-  color: black;
   display: block;
   padding-top: 5px;
   font-size: 22px;
@@ -121,6 +120,7 @@ h3 {
 .third-container {
   color: white;
   display: flex;
+  position: relative;
   width: 100%;
   background-image: url("../images/map.jpg");
   background-repeat: no-repeat;
@@ -130,6 +130,16 @@ h3 {
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 250px;
+  height: 250px;
 }
 
 .forth-container {
