@@ -13,6 +13,9 @@
     <audio autoplay loop id="myAudio">
       <source src="music/main.mp3">
     </audio>
+    <audio id="rollSound">
+      <source src="music/rollSound.mp3">
+    </audio>
     <a onclick="togglePlay()"><img id="audio" src="images/audio_off.png" onclick="changeImage()"/></a>
     <div class="holster">
       <div class="container first-container" id="page-1">
@@ -68,7 +71,27 @@
       </div>
 
       <div class="container third-container" id="page-3">
-        <img id="icewind_map" src="images/map.jpg" alt="Map">
+        <a href="#" id="bremen" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/bremen.png"/>
+        <a href="#" id="bryn_shander" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/bryn_shander.png"/>
+        <a href="#" id="easthaven" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/easthaven.png"/>
+        <a href="#" id="lonelywood" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/lonelywood.png"/>
+        <a href="#" id="caer-dineval" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/caer-dineval.png"/>
+        <a href="#" id="caer-konig" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/caer-konig.png"/>
+        <a href="#" id="dougans_hole" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/dougans_hole.png"/>
+        <a href="#" id="good_mead" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/good_mead.png"/>
+        <a href="#" id="targos" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/targos.png"/>
+        <a href="#" id="termalaine" onpointerenter="showImage(this);" onpointerleave="hideImage();">ㅤ</a>
+        <img src="images/termalaine.png"/>
+
       </div>
 
       <div class="container forth-container" id="page-4">
@@ -112,12 +135,12 @@
       </div>
 
       <div class="site-nav">
-        <div class="nav_button"><p class="main-text">Главная</p><a href="#page-1"><img src="images/d20.png" title="Main"/></a></div>
-        <div class="nav_button"><p class="synopsis-text">Синопсис</p><a href="#page-2"><img src="images/d12.png" title="Synopsis"/></a></div>
-        <div class="nav_button"><p class="map-text">Карта</p><a href="#page-3"><img src="images/d10.png" title="Map"/></a></div>
-        <div class="nav_button"><p class="characters-text">Персонажи</p><a href="#page-4"><img src="images/d8.png" title="Characters"/></a></div>
-        <div class="nav_button"><p class="books-text">Книги</p><a href="#page-5"><img src="images/d6.png" title="Books"/></a></div>
-        <div class="nav_button"><p class="links-text">Контакты</p><a href="#page-6"><img src="images/d4.png" title="Discord"/></a></div>
+        <div class="nav_button"><p id="20" class="Главная">Главная</p><a href="#page-1" onclick="rollDice(this);"><img src="images/d20.png" title="Main"/></a></div>
+        <div class="nav_button"><p id="12" class="Синопсис">Синопсис</p><a href="#page-2" onclick="rollDice(this);"><img src="images/d12.png" title="Synopsis"/></a></div>
+        <div class="nav_button"><p id="10" class="Карта">Карта</p><a href="#page-3" onclick="rollDice(this);"><img src="images/d10.png" title="Map"/></a></div>
+        <div class="nav_button"><p id="8" class="Персонажи">Персонажи</p><a href="#page-4" onclick="rollDice(this);"><img src="images/d8.png" title="Characters"/></a></div>
+        <div class="nav_button"><p id="6" class="Книги">Книги</p><a href="#page-5" onclick="rollDice(this);"><img src="images/d6.png" title="Books"/></a></div>
+        <div class="nav_button"><p id="4" class="Контакты">Контакты</p><a href="#page-6" onclick="rollDice(this);"><img src="images/d4.png" title="Discord"/></a></div>
       </div>
     </div>
     <script src="script.js"></script>

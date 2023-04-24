@@ -130,4 +130,54 @@ function magnify(imgID, zoom) {
   }
 }
 
-magnify("icewind_map", 3);
+var timeout = {};
+var rollSound = document.getElementById('rollSound');
+rollSound.volume = 0.5;
+
+function rollDice(element) {
+  rollSound.play();
+  var form = element.previousElementSibling;
+  var formId = parseInt(form.id);
+
+  var rollValue = getRollValue(formId);
+  if (rollValue == 20) {
+    form.style.color = "#9e0b0f"
+  } else {
+    form.style.color = "white"
+  }
+  form.innerHTML = rollValue;
+
+  clearTimeout(timeout[form.id]);
+  timeout[form.id] = setTimeout(function(){
+    form.innerHTML = form.className;
+    form.style.color = "white";
+  }, 3000)
+}
+
+function getRollValue(max){
+  return Math.floor(Math.random() * max + 1);
+}
+
+let attached = false;
+
+let imageContainer;
+
+const followMouse = (event) => {
+  imageContainer.style.left = event.x + "px";
+  imageContainer.style.top = event.y - 400 + "px";
+}
+
+function showImage(element) {
+  imageContainer = element.nextElementSibling;
+  if (!attached) {
+    attached = true;
+    imageContainer.style.display = "block";
+    document.addEventListener("pointermove", followMouse);
+  }
+}
+
+function hideImage() {
+  attached = false;
+  imageContainer.style.display = "";
+  document.removeEventListener("pointermove", followMouse);
+}
