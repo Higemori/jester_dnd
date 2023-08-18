@@ -52,6 +52,7 @@ body {
   margin: 0;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -65,7 +66,7 @@ a {
 h1 {
   font-size: 10vmin;
   margin: 0 auto 0 auto;
-  font-family: 'Bona Nova', serif;
+  font-family: 'Rubik Wet Paint', cursive;
   line-height: 2;
 }
 
@@ -73,13 +74,13 @@ h2 {
   font-size: 5vmin;
   margin-top: 0;
   margin-bottom: 7vh;
-  font-family: 'Bona Nova', serif;
+  font-family: 'Rubik Wet Paint', cursive;
 }
 
 h3 {
   font-size: 3vmin;
   margin: 0 auto;
-  font-family: 'Bona Nova', serif;
+  font-family: 'Rubik Wet Paint', cursive;
   margin: 0;
 }
 
@@ -98,6 +99,7 @@ h3 {
 }
 
 .second-container {
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +110,7 @@ h3 {
   background-size: cover;
   background-position: center;
   max-height: 100%;
+  color: black;
 }
 
 .second-container div {
@@ -115,14 +118,16 @@ h3 {
   text-align: justify;
   justify-content: center;
   align-items: center;
+  font-family: 'Caveat', cursive;
+  font-size: 3.5vmin;
+  color: black;
 }
 
 .third-container {
   color: white;
   display: flex;
-  position: relative;
   width: 100%;
-  background-image: url("../images/map.jpg");
+  background-image: url("../images/map.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,17 +137,13 @@ h3 {
   scroll-snap-align: start;
 }
 
-.third-container img {
-  position: absolute;
-  display: none;
-  pointer-events: none;
-  width: auto;
-  height: 700px;
+.third-container div {
+  width: 65%;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
 }
 
-.third-container a {
-  position: absolute;
-}
 
 .img-magnifier-glass {
   position: absolute;
@@ -155,11 +156,11 @@ h3 {
 }
 
 .forth-container {
-  color: white;
+  color: black;
   display: flex;
   width: 100%;
-  padding-top: 10vh;
-  background-image: url("../images/char_bg.png");
+  padding-top: 12vh;
+  background-image: url("../images/char_bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -273,10 +274,11 @@ h3 {
 }
 
 .fifth-container {
+  padding-top: 12vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   scroll-snap-align: start;
   color: white;
@@ -285,7 +287,7 @@ h3 {
 
 .sixth-container {
   width: 100%;
-  background-image: url("../images/contact_us.png");
+  background-image: url("../images/contact_us.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -298,7 +300,7 @@ h3 {
 }
 
 .book {
-  width: 23vw;
+  width: 18vw;
   height: auto;
   margin: 2vh 2vw;
   opacity: 0.75;
@@ -320,11 +322,24 @@ h3 {
 }
 
 .discord {
-  width: 15vw;
-  height: auto;
+  height: 50vh;
+  width: auto;
   margin: 2vh 2vw;
   opacity: 0.75;
 }
+
+.add_char {
+  width: 12vw;
+  height: auto;
+  margin: 10vh 2vw;
+  opacity: 0.75;
+}
+
+.add_char:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
 
 .discord:hover {
   transform: scale(1.25);

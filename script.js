@@ -66,7 +66,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline="June 03 2023 13:00:00 GMT+0300";
+var deadline="October 1 2023 13:00:00 GMT+0300";
 initializeClock('countdown', deadline);
 
 function magnify(imgID, zoom) {
@@ -132,7 +132,7 @@ function magnify(imgID, zoom) {
 
 var timeout = {};
 var rollSound = document.getElementById('rollSound');
-rollSound.volume = 0.5;
+rollSound.volume = 0.15;
 
 function rollDice(element) {
   rollSound.play();
