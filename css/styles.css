@@ -156,18 +156,36 @@ h3 {
 }
 
 .forth-container {
-  color: black;
+  color: white;
   display: flex;
   width: 100%;
-  padding-top: 12vh;
   background-image: url("../images/char_bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   scroll-snap-align: start;
+  text-align: center;
+}
+
+.forth-container div {
+	align-items: center;
+	justify-content: center;
+}
+
+.forth-container h2 {
+	color: #9e0b0f;
+}
+
+.info-block {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, .5);
+  display: inline-block;
+  text-align: left;
 }
 
 .slider-wrapper {
