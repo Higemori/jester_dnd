@@ -341,7 +341,7 @@ h3 {
 }
 
 .discord {
-  height: 50vh;
+  height: 35vmin;
   width: auto;
   margin: 2vh 2vw;
   opacity: 0.75;
