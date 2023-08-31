@@ -5,7 +5,6 @@
 .holster {
   height: 100%;
   overflow-y: scroll;
-  scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -61,6 +60,7 @@ a {
   height: 100%;
   overflow: hidden;
   scroll-snap-stop: always;
+  scroll-snap-align: start;
 }
 
 h1 {
@@ -79,7 +79,7 @@ h2 {
 
 h3 {
   font-size: 3vmin;
-  margin: 0 auto;
+  margin: 0;
   font-family: 'Rubik Wet Paint', cursive;
   margin: 0;
 }
@@ -186,6 +186,7 @@ h3 {
   background: rgba(0, 0, 0, .5);
   display: inline-block;
   text-align: left;
+  width: 70vw;
 }
 
 .slider-wrapper {
@@ -473,3 +474,4 @@ img {
   display: inline;
   opacity: 1;
 }
+

@@ -182,42 +182,20 @@ function hideImage() {
   document.removeEventListener("pointermove", followMouse);
 }
 
-var coords;
 
-function setCoords() {
-  var w = window.innerWidth;
-  var h = window.innerHeight;
-  coords = document.getElementById('bremen');
-  coords.style.left = 0.2688 * w + "px";
-  coords.style.top = 0.4944 * h + "px";
-  coords = document.getElementById('bryn_shander');
-  coords.style.left = 0.314 * w + "px";
-  coords.style.top = 0.5681 * h + "px";
-  coords = document.getElementById('easthaven');
-  coords.style.left = 0.4566 * w + "px";
-  coords.style.top = 0.6049 * h + "px";
-  coords = document.getElementById('lonelywood');
-  coords.style.left = 0.3369 * w + "px";
-  coords.style.top = 0.3971 * h + "px";
-  coords = document.getElementById('caer-dineval');
-  coords.style.left = 0.4604 * w + "px";
-  coords.style.top = 0.5005 * h + "px";
-  coords = document.getElementById('caer-konig');
-  coords.style.left = 0.487 * w + "px";
-  coords.style.top = 0.4299 * h + "px";
-  coords = document.getElementById('dougans_hole');
-  coords.style.left = 0.3417 * w + "px";
-  coords.style.top = 0.6899 * h + "px";
-  coords = document.getElementById('good_mead');
-  coords.style.left = 0.3805 * w + "px";
-  coords.style.top = 0.651 * h + "px";
-  coords = document.getElementById('targos');
-  coords.style.left = 0.2831 * w + "px";
-  coords.style.top = 0.5281 * h + "px";
-  coords = document.getElementById('termalaine');
-  coords.style.left = 0.356 * w + "px";
-  coords.style.top = 0.4248 * h + "px";
+function ShowInfo(ele) {
+    var x = ele;
+	var y = x.getElementsByTagName('div')[1];
+	var z = x.getElementsByTagName('p')[1];
+	if (y.style.display === "none") {
+		y.style.display = "inline-block";
+		y.style.marginTop = "2vh";
+		y.style.marginBottom = "1vh";
+		z.innerHTML = "-";
+	} else {
+		y.style.display = "none";
+		y.style.marginTop = "0vh";
+		y.style.marginBottom = "0vh";
+		z.innerHTML = "+";
+	}
 }
-
-setCoords();
-window.addEventListener('resize', setCoords);
