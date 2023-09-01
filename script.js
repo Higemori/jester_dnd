@@ -1,20 +1,22 @@
-var audio_on = false;
-
-function changeImage() {
-  var img = document.getElementById('audio');
-  if (audio_on == true) {
-    img.src = "images/audio_off.png";
-    audio_on = false
-  } else {
-    img.src = "images/audio_on.png";
-    audio_on = true;
-  }
-};
 
 var myAudio = document.getElementById('myAudio');
+var img = document.getElementById('audio');
 myAudio.volume = 0.5;
 
+function check_playing(){
+  if (myAudio.paused) {
+	 img.src = "images/audio_off.png";
+  } else {
+	 img.src = "images/audio_on.png";
+  }
+}
+
 function togglePlay() {
+  if (myAudio.paused) {
+	 img.src = "images/audio_on.png";
+  } else {
+	 img.src = "images/audio_off.png";
+  }
   return myAudio.paused ? myAudio.play() : myAudio.pause();
 };
 

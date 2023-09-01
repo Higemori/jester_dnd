@@ -107,14 +107,15 @@ h3 {
   scroll-snap-align: start;
   background-image: url("../images/synopsis.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   max-height: 100%;
   color: black;
+  background-color: black;
 }
 
 .second-container div {
-  width: 65%;
+  width: 50%;
   text-align: justify;
   justify-content: center;
   align-items: center;
@@ -134,15 +135,24 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   scroll-snap-align: start;
 }
 
 .third-container div {
-  width: 65%;
-  text-align: justify;
-  justify-content: center;
-  align-items: center;
+	display:flex;
+	flex-direction: row;
+	width: 70%;
+	text-align: justify;
+	justify-content: center;
+	align-items: flex-start;
 }
+
+.third-container p {
+	margin-left: 3vw;
+	margin-top: 0;
+}
+
 
 
 .img-magnifier-glass {
