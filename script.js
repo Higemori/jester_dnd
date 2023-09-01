@@ -190,7 +190,7 @@ function ShowInfo(ele) {
 	var y = x.getElementsByTagName('div')[1];
 	var z = x.getElementsByTagName('p')[1];
 	if (y.style.display === "none") {
-		y.style.display = "inline-block";
+		y.style.display = "block";
 		y.style.marginTop = "2vh";
 		y.style.marginBottom = "1vh";
 		z.innerHTML = "-";
