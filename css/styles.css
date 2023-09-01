@@ -66,7 +66,7 @@ a {
 h1 {
   font-size: 10vmin;
   margin: 0 auto 0 auto;
-  font-family: 'Forum', cursive;
+  font-family: 'Cormorant Infant', serif;
   line-height: 2;
 }
 
@@ -74,13 +74,13 @@ h2 {
   font-size: 5vmin;
   margin-top: 0;
   margin-bottom: 7vh;
-  font-family: 'Forum', cursive;
+  font-family: 'Cormorant Infant', serif;
 }
 
 h3 {
   font-size: 3vmin;
   margin: 0;
-  font-family: 'Forum', cursive;
+  font-family: 'Cormorant Infant', serif;
   margin: 0;
 }
 
@@ -119,8 +119,8 @@ h3 {
   text-align: justify;
   justify-content: center;
   align-items: center;
-  font-family: 'Caveat', cursive;
-  font-size: 3.5vmin;
+  font-family: 'Marck Script', cursive;
+  font-size: 3vmin;
   color: black;
 }
 
