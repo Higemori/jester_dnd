@@ -184,6 +184,10 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	font-size: 2.5vmin;
+	margin-bottom: 1vh;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .forth-container h2 {

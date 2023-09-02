@@ -191,8 +191,8 @@ function ShowInfo(ele) {
 	var z = x.getElementsByTagName('p')[1];
 	if (y.style.display === "none") {
 		y.style.display = "block";
-		y.style.marginTop = "2vh";
-		y.style.marginBottom = "1vh";
+		y.style.marginTop = "0vh";
+		y.style.marginBottom = "0vh";
 		z.innerHTML = "-";
 	} else {
 		y.style.display = "none";
