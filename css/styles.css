@@ -20,14 +20,14 @@
 .countdown-number {
   padding: 10px;
   border-radius: 3px;
-  background: rgba(0, 0, 0, .25);
+  background: rgba(0, 0, 0, .5);
   display: inline-block;
 }
 
 .countdown-time {
   padding: 15px;
   border-radius: 3px;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 1);
   display: inline-block;
 }
 
@@ -54,6 +54,7 @@ body {
 
 a {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .container {
@@ -66,7 +67,7 @@ a {
 h1 {
   font-size: 10vmin;
   margin: 0 auto 0 auto;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Alice', serif;
   line-height: 2;
 }
 
@@ -74,18 +75,18 @@ h2 {
   font-size: 5vmin;
   margin-top: 0;
   margin-bottom: 7vh;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Alice', serif;
 }
 
 h3 {
   font-size: 3vmin;
   margin: 0;
-  font-family: 'Cormorant Infant', serif;
+  font-family: 'Alice', serif;
   margin: 0;
 }
 
 .first-container {
-  background-image: url("../images/bg.gif");
+  background-image: url("../images/main.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,6 +96,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
   scroll-snap-align: start;
 }
 
@@ -128,7 +130,7 @@ h3 {
   color: white;
   display: flex;
   width: 100%;
-  background-image: url("../images/map.gif");
+  background-image: url("../images/third.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -140,13 +142,20 @@ h3 {
 }
 
 .third-container div {
-	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 70%;
 	text-align: justify;
 	justify-content: center;
 	align-items: flex-start;
+	overflow:auto;
 }
+
+.third-container a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: #9e0b0f;
+	  display: inline;
+	  text-decoration-line: none;
+ }
 
 .third-container p {
 	margin-left: 3vw;
@@ -169,10 +178,11 @@ h3 {
   color: white;
   display: flex;
   width: 100%;
-  background-image: url("../images/char_bg.gif");
+  background-image: url("../images/forth.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: top;
+  background-color: black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -321,16 +331,21 @@ h3 {
 
 .sixth-container {
   width: 100%;
-  background-image: url("../images/contact_us.gif");
+  background-image: url("../images/sixth.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: black;
   align-items: center;
   scroll-snap-align: start;
   color: white;
+}
+
+.sixth-container p {
+	width: 70vw;
 }
 
 .book {
@@ -347,6 +362,27 @@ h3 {
 }
 
 .books {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.edition {
+  width: 18vw;
+  height: auto;
+  margin: 2vh 2vw;
+  opacity: 0.75;
+}
+
+.edition:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+.editions {
   width: 100%;
   display: flex;
   flex-direction: row;

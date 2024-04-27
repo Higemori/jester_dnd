@@ -68,7 +68,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline="October 22 2023 13:00:00 GMT+0300";
+var deadline="June 2 2024 13:00:00 GMT+0300";
 initializeClock('countdown', deadline);
 
 function magnify(imgID, zoom) {
